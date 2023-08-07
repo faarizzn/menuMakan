@@ -1,0 +1,32 @@
+import random
+import datetime
+import sys
+now = datetime.date.today()
+varRand = random.randint(1,99)
+print('hari ini ' + str(now))
+print("Pesan apa hari ini ? ")
+print('Makan || Minum || Snack ')
+mask = input("Pilihan Anda Adalah = ")
+kan = 'makan' in mask
+if kan == True:
+    stk = print("Menu Makan Hari Ini adalah = Steak Sapi")
+elif ('minum' in mask):
+    print("Menu Minum Hari Ini Adalah = Jus Buah Segar")
+else:
+    print("Snack Hari Ini adalah = Rengginang Gosong !" )
+if('makan' in mask):
+    print('tingkat Kematangan Steak anda adalah ')
+    print('Rare')
+    print("medium")
+    print("well done")
+    var = input("Pilihan anda adalah = ")
+    sys.exit(print("baik pesanan anda adalah Steak dengan tingkat kematangan " + str(var) + " || Nomor Antrian anda adalah = " + str(varRand)))
+elif('minum' in mask):
+    print("Pilihan Buah Hari Ini adalah : ")
+    print("Mangga ")
+    print("Jambu")
+    print("Jeruk")
+    rasa = input("Pilihan anda adalah = ")
+    sys.exit(print("baik pesanan anda adalah minuman dengan rasa " + str(rasa) + " || Nomor Antrian anda adalah = " + str(varRand)))
+else:
+    sys.exit(print("Nomor Antrian anda adalah = " + str(varRand)))
